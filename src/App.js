@@ -77,8 +77,12 @@ function App() {
         <Board />
       </div>
       <div className="game-info">
-        <div>{/* status */}</div>
-        <ol>{/* TODO */}</ol>
+        <div>game caro 3x3 (by Duy-Dark)</div>
+        <ol>
+          <li>chơi game xen kẻ</li>
+          <li>X đi trước</li>
+          <li>O đi sau</li>
+        </ol>
       </div>
     </div>
   );

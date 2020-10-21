@@ -31,6 +31,15 @@ ol, ul {
   text-align: center;
   width: 34px;
 }
+.square.square-x {
+  border: 3px solid yellow;
+}
+.square.square-o {
+  border: 3px solid green;
+}
+.square.square-win {
+  border: 3px solid red !important;
+}
 
 .square:focus {
   outline: none;
@@ -47,4 +56,73 @@ ol, ul {
 
 .game-info {
   margin-left: 20px;
+}
+
+.game-player--title {
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.list-player {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+}
+
+.player-item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.player-item input {
+  margin-right: 8px;
+}
+
+.player-item label {
+  font-size: 20px;
+  line-height: 22px;
+}
+
+.game-play {
+  display: flex;
+  flex-direction: row;
+}
+.game-reset, .game-reselect {
+  margin-left: 20px;
+}
+.game-reset p, .game-reselect p {
+  margin: 0;
+}
+
+.game-reset button, .game-reselect button {
+  margin-top: 10px;
+}
+
+.game-about {
+
+}
+
+.item {
+  padding-left: 20px;
+  font-size: 15px;
+  line-height: 25px;
+  position: relative;
+}
+
+.item::after {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 0;
+  width: 15px;
+  height: 15px;
+}
+
+.item-yellow::after {
+  background-color: yellow;
+}
+.item-green::after {
+  background-color: green;
+}
+.item-red::after {
+  background-color: red;
 }
